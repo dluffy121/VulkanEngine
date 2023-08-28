@@ -6,7 +6,7 @@
 int main()
 {
 	{
-		UPTR<VulkanApplication> va = VulkanApplication::Get();
+		UPTR<VulkanEngine::VulkanApplication> va = VulkanEngine::VulkanApplication::Get();
 
 		if (!va->Init())
 			return 1;

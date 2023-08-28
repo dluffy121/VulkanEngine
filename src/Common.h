@@ -7,6 +7,7 @@
 #include <Type.h>
 #include <vector>
 #include <map>
+#include <set>
 #include <optional>
 #include <format>
 
@@ -20,13 +21,22 @@
 #define INT32 int32_t
 #define INT64 int64_t
 
+//#define VK_USE_PLATFORM_WIN32_KHR
+
 // Graphics Library Layer (GLL)
 #ifndef _glfw3_h_
 
 #define GLFW_INCLUDE_VULKAN
+
 #include <GLFW/glfw3.h>
 
-#endif
+#define GLFW_EXPOSE_NATIVE_WIN32
+
+#ifdef VK_USE_PLATFORM_WIN32_KHR
+#include <GLFW/glfw3native.h>
+#endif // VK_USE_PLATFORM_WIN32_KHR
+
+#endif // _glfw3_h_
 
 
 
