@@ -1,8 +1,0 @@
-﻿  main.cpp
-  VulkanApplication.cpp
-  Generating code
-  Previous IPDB not found, fall back to full compilation.
-C:\Projects\C++ Projects\Vulkan\src\VulkanApplication.cpp(9): warning C4715: 'VulkanApplication::Init': not all control paths return a value
-  All 42 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Finished generating code
-  Vulkan.vcxproj -> C:\Projects\C++ Projects\Vulkan\x64\Release\Vulkan.exe
