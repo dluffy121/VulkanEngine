@@ -41,5 +41,8 @@
 
 # End of https://www.toptal.com/developers/gitignore/api/c++
 
+# Ignore Intermerdiate Files
+Intermerdiate
+
 # Ignore Build Files
 x64
