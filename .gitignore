@@ -43,6 +43,7 @@
 
 # Intermerdiate Files
 Intermerdiate
+*.pdb
 
 # Build Files
 x64
