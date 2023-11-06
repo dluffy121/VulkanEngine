@@ -4,12 +4,13 @@
 #include <iostream>
 #include <string>
 #include <assert.h>
-#include <Type.h>
 #include <vector>
 #include <map>
 #include <set>
 #include <optional>
 #include <format>
+#include <limits>
+#include <algorithm>
 
 #define UINT8 uint8_t
 #define UINT16 uint16_t
@@ -160,5 +161,12 @@ inline std::string className(const std::string& prettyFunction)
 
 #endif // NDEBUG
 
+
+#pragma endregion
+
+#pragma region Precompiled Headers
+
+#include <Core/CorePCH.h>
+#include <Utility/UtilityPCH.h>
 
 #pragma endregion
