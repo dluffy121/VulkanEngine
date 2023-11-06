@@ -50,3 +50,6 @@ x64
 
 # Log Files
 *.log
+
+# VS Proj User Filters
+*.vcsproj.user
