@@ -6,8 +6,11 @@ namespace VulkanEngine
 {
 	class Window
 	{
+		static void FramebufferResizeCallback(GLFWwindow* window, int width, int height);
+
 	private:
-		GLFWwindow* window;
+		GLFWwindow* _window;
+		bool _framebufferResized;
 
 	public:
 		Window(int width, int height, const std::string& title, GLFWwindow* sharedWindow = nullptr, GLFWmonitor* monitor = nullptr, bool isHidden = false, bool isDecorated = true);
@@ -15,7 +18,12 @@ namespace VulkanEngine
 
 		void Use();
 
-		inline GLFWwindow* GetGLFWWindow() const { return window; }
+		void WaitForMaximization();
+
+		inline GLFWwindow* GetGLFWWindow() const { return _window; }
+		inline bool IsDirty() { return _framebufferResized; }
+		inline void MarkDirty() { _framebufferResized = true; }
+		inline void Clean() { _framebufferResized = false; }
 
 	public:
 		Window(const VulkanEngine::Window&) = delete;
